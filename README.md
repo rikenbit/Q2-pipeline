@@ -27,23 +27,23 @@ Install [Docker](https://docs.docker.com/engine/installation/) for full pipeline
 Clone from github
 
 ```bash
-git clone **
+git clone rikenbit/Q2-pipeline
 ```
 
 or download script with wget/curl and uncompress it
 
 ```
-wget https://****.tar.gz
-tar xf ****tar.gz
+wget https://github.com/rikenbit/Q2-pipeline/releases/download/1.0/Q2-pipeline_py2.tar.gz
 or
-curl -o ****
-tar xf ****tar.gz
+curl -o https://github.com/rikenbit/Q2-pipeline/releases/download/1.0/Q2-pipeline_py2.tar.gz
+
+tar xf Q2-pipeline_py2.tar.gz
 ```
 
 Change directories to the following:Q2-pipeline
 
 ```
-cd Q2-pipeline
+cd Q2-pipeline_py2
 ```
 
 #### Edit Permission

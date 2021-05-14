@@ -27,23 +27,23 @@ Gridengineが導入されたシステムを準備します
 githubからクローンします
 
 ```bash
-git clone **
+git clone rikenbit/Q2-pipeline
 ```
 
 または wget/curl でダウンロードして展開します
 
 ```
-wget https://****.tar.gz
-tar xf ****tar.gz
+wget https://github.com/rikenbit/Q2-pipeline/releases/download/1.0/Q2-pipeline_py2.tar.gz
 or
-curl -o ****
-tar xf ****tar.gz
+curl -o https://github.com/rikenbit/Q2-pipeline/releases/download/1.0/Q2-pipeline_py2.tar.gz
+
+tar xf Q2-pipeline_py2.tar.gz
 ```
 
 Q2-pipelineディレクトリに移動します
 
 ```
-cd Q2-pipeline
+cd Q2-pipeline_py2
 ```
 
 #### パーミッションの変更
