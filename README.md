@@ -24,13 +24,13 @@ Install [Docker](https://docs.docker.com/engine/installation/) for full pipeline
 
 #### Download scripts
 
-Clone from github
+Clone from github.
 
 ```bash
 git clone rikenbit/Q2-pipeline
 ```
 
-or download script with wget/curl and uncompress it
+or download script with wget/curl and uncompress it.
 
 ```
 wget https://github.com/rikenbit/Q2-pipeline/releases/download/1.0/Q2-pipeline_py2.tar.gz
@@ -40,7 +40,7 @@ curl -o https://github.com/rikenbit/Q2-pipeline/releases/download/1.0/Q2-pipelin
 tar xf Q2-pipeline_py2.tar.gz
 ```
 
-Change directories to the following:Q2-pipeline
+Change directories to the following:Q2-pipeline.
 
 ```
 cd Q2-pipeline_py2
@@ -48,7 +48,7 @@ cd Q2-pipeline_py2
 
 #### Edit Permission
 
-Sets the execute permission for the file
+Sets the execute permission for the file.
 
 ```bash
 chmod +x *.py
@@ -75,8 +75,8 @@ docker pull itpsc/star:2.7.8a
 #### Get Genome data fasta/gtf
 
 In advance, Get fasta / gtf.
-For samples, refer "./reference/Download_Gencode_mouse.sh"
-Below is an example script for download mouse reference data from [Gencode](https://www.gencodegenes.org/)
+For samples, refer "./reference/Download_Gencode_mouse.sh".
+Below is an example script for download mouse reference data from [Gencode](https://www.gencodegenes.org/).
 
 ```bash
 sh Download_Gencode_mouse.sh
@@ -86,7 +86,7 @@ sh Download_Gencode_mouse.sh
 
 #### Edit makeref.yaml
 
-Enter downloaded file path to following field in the makeref.yaml
+Enter downloaded file path to following field in the makeref.yaml.
 
 - INPUT_FASTA: fasta file
 - INPUT_GTF: gtf file
@@ -120,7 +120,7 @@ REF_DIR: "./combined_mouse_Gencode_GRCm39_M26"
 python make_reference.py
 ```
 
-If it ends normally, the following files will be created under the specified directory
+If it ends normally, the following files will be created under the specified directory.
 
 ```
 .
@@ -153,7 +153,7 @@ If it ends normally, the following files will be created under the specified dir
 
 #### Edit configure.yaml
 
-Specify the directory of the created reference data in REF_DIR
+Specify the directory of the created reference data in REF_DIR.
 
 ```yaml
 # Gridengin queue name
@@ -192,7 +192,7 @@ TRIMSEQUENCE: 'GTATAGAATTCGCGGCCGCTCGCGAT'
 
 #### Conversion of bcl
 
-Conversion bcl to fastq, and run FastQC
+Conversion bcl to fastq, and run FastQC.
 
 ```bash
 sh 00_pipeline.sh 1
@@ -215,24 +215,24 @@ sh 00_pipeline.sh 3
 ```
 
 As the process progresses, the message "~ _qsub.py finished" will be displayed.
-The script will end when it completes up to 17_analog_expression
-Make sure that it is not terminated due to an error and that there are no jobs left, and if there are no problems, it is complete
+The script will end when it completes up to 17_analog_expression.
+Make sure that it is not terminated due to an error and that there are no jobs left, and if there are no problems, it is complete.
 
 
 
-If you want to run the pipeline manually, run the python scripts sequentially
+If you want to run the pipeline manually, run the python scripts sequentially.
 
 ```bash
 python 01_bcl2fastq
 ```
 
-Execute sequentially up to 17_analog_expression
+Execute sequentially up to 17_analog_expression.
 
 
 
 #### Delete intermediate data
 
-Delete the intermediate file when all python scripts are finished
+Delete the intermediate file when all python scripts are finished.
 
 ```
 sh data_copy.sh
@@ -244,7 +244,7 @@ sh data_copy.sh
 sh del_tempfile.sh
 ```
 
-When you run the script, the following files will be copied to directory
+When you run the script, the following files will be copied to directory.
 
 - FastQC
 - BAMTagHistogram
@@ -284,3 +284,4 @@ Analysis_results
 ## License
 
 Copyright (c) RIKEN Bioinformatics Research Unit Released under the MIT license (http://www.opensource.org/licenses/mit-license.php)
+
