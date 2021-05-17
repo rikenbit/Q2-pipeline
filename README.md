@@ -16,9 +16,9 @@
 
 ### Before you begin
 
-Install grid engein
+Install grid engein.
 
-Install [Docker](https://docs.docker.com/engine/installation/) for full pipeline reproducibility
+Install [Docker](https://docs.docker.com/engine/installation/) for full pipeline reproducibility.
 
 ### Setup
 
