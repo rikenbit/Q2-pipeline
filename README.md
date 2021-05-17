@@ -1,6 +1,5 @@
 # Quartz-Seq2 pipeline
-
-[TOC]
+The repository provides a data analysis workflow for Quartz-Seq2, one of the high-throughput single-cell RNA-seq methods. This workflow produces a gene expression/UMI count matrix from fastq/bcl files.
 
 ## System Requirements
 
