@@ -50,7 +50,7 @@ for i, input_file in enumerate(input_files):
             job_name = "Corr" + str(i) + "_" + m[0] + str(d)
 
             qsub_option = ("#!/bin/bash\n\n" +
-                           "#$ -q node.q\n" +
+                           "#$ -q " + obj['QUEUE_NODE'] + "\n" +
                            "#$ -notify\n" +
                            "#$ -N " + job_name + "\n" +
                            "#$ -o " + stdout_file + "\n" +
