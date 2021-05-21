@@ -21,6 +21,13 @@ list_sh_file = []
 
 threads_num = obj['THREADNUM']
 
+if obj['CB_LENGTH'] == '14':
+    CBLEN_1 = ("1-14")
+    CBLEN_2 = ("15-22")
+elif obj['CB_LENGTH'] == '15':
+    CBLEN_1 = ("1-15")
+    CBLEN_2 = ("15-23")
+
 for i, input_file in enumerate(input_files):
     sample_name = (os.path.split(input_file)[1].split(".")[0])
     output_file_cell = os.path.join(output_dir, sample_name + "_Cell.bam")
@@ -54,7 +61,7 @@ for i, input_file in enumerate(input_files):
              "    INPUT=" + input_file + " \\\n" +
              "    OUTPUT=" + output_file_cell + " \\\n" +
              "    SUMMARY=" + summary_file_cell + " \\\n" +
-             "    BASE_RANGE=1-14 \\\n" +
+             "    BASE_RANGE=" + CBLEN_1 + " \\\n" +
              "    BASE_QUALITY=10 \\\n" +
              "    BARCODED_READ=1 \\\n" +
              "    DISCARD_READ=FALSE \\\n" +
@@ -65,7 +72,7 @@ for i, input_file in enumerate(input_files):
              "    INPUT=" + output_file_cell + " \\\n" +
              "    OUTPUT=" + output_file_cell_mol + " \\\n" +
              "    SUMMARY=" + summary_file_cell_mol + " \\\n" +
-             "    BASE_RANGE=15-22 \\\n" +
+             "    BASE_RANGE=" + CBLEN_2 + " \\\n" +
              "    BASE_QUALITY=10 \\\n" +
              "    BARCODED_READ=1 \\\n" +
              "    DISCARD_READ=True \\\n" +
