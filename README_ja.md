@@ -183,7 +183,9 @@ BCL_DIR: '/data/*****'
 SAMPLESHEET: 'SampleSheet.csv'
 REF_DIR: './combined_mouse_Gencode_M26'
 SPECIES: 'mouse'
-BARCODE_FILE: '20160303_MDRT384primer.unix.txt'
+CB_LENGTH: '15'
+# Cell Barcode length 14mer or 15mer
+BARCODE_FILE: 'CB_15mer_384_SetA.txt'
 TRIMSEQUENCE: 'GTATAGAATTCGCGGCCGCTCGCGAT'
 ```
 
