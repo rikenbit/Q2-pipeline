@@ -6,7 +6,7 @@ THREADNUM: '12'
 # job scheduler command
 RUN_CMD: 'qsub'
 # Container OPTION
-DOCKER_OPT: 'docker run --rm --init -u 10014:10000 -v /etc/passwd:/etc/passwd:ro -v /etc/group:/etc/group:ro -v $HOME:$HOME -w $PWD'
+DOCKER_OPT: 'docker run --rm --init -u `id -u`:`id -g` -v /etc/passwd:/etc/passwd:ro -v /etc/group:/etc/group:ro -v $HOME:$HOME -w $PWD'
 
 # Container name
 PICARD_IMG: 'itpsc/picard:2.25.2'
