@@ -1,7 +1,7 @@
 cff-version: 1.1.0
+message: "Quartz-Seq2"
 authors:
 - family-names: Ichikawa
   given-names: Takumi
-orcid: https://orcid.org/0000-0003-3341-9548
-title:Q2-pipeline
-version: 1.0b
+  orcid: https://orcid.org/0000-0003-3341-9548
+title: "Q2-pipeline"
